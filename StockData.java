@@ -10,7 +10,7 @@ import java.util.*;
  * the database called "stock_database.db".  
  * 
  * @author Chandana Jayasundara
- * @version 1.0
+ * @version 1.1
  * @since 2016-08-23
  */
 public class StockData {

@@ -49,7 +49,7 @@ public class StockData {
     }
 
     /**
-     * This is where program will call all the other methods
+     * This is where program will call all other methods
      */
     public void run(){
         /*Populate random entries in STOCKS table*/
@@ -91,8 +91,8 @@ public class StockData {
     }
     
     /**
-     * This method get all the stock symbols given in STOCKS table and 
-     * stores in an string array which will be used later 
+     * Get all the stock symbols given in STOCKS table and 
+     * store in an string array which will be used later 
      * @return symbolArray contains a list of stock symbols
      */
     public String [] getStockSymbols(){
@@ -119,7 +119,7 @@ public class StockData {
     }
 
     /**
-     * This method returns a dictionary which contains stock_id and stock_symbol
+     * Returns a dictionary which contains stock_id and stock_symbol
      * @return stockDictionary contains stock_symbol and corresponding stock_id
      */
     public Dictionary getStockIdDictionary(){
@@ -145,7 +145,7 @@ public class StockData {
     }
     
     /**
-     * This method creates a CVS file containing stock prices for the stocks given in 
+     * Creates a CVS file containing stock prices for the stocks given in 
      * STOCK table, in the following format:
      * Date, Symbol, Open, High, Low, Close
      * 20050101,ABCDE,10.2,45.5,40.5,50.2
@@ -188,7 +188,7 @@ public class StockData {
     }
     
    /**
-    * This method inserts data into the CSV file for a given period of time
+    * Inserts data into the CSV file for a given period of time
     * @param start begining date
     * @param stop final date
     * @param symboleArray array of strings which contains stock symboles 
@@ -227,7 +227,7 @@ public class StockData {
     }
     
     /**
-     * This method checks the last row of STOCK_PRICES table and and obtain the last date 
+     * Check the last row of STOCK_PRICES table and and obtain the last date 
      * of the records.
      * @return String lastDate This is the last day of the last record in STOCK_PRICES table
      */
@@ -253,7 +253,7 @@ public class StockData {
     }
      
    /**
-     * This method process the CSV file and continue populating from the last inserted
+     * Process the CSV file and continue populating from the last inserted
      * record in the STOCK_PRICES table
      * @param date This is the last day of the last row of STOCK_PRICES table
      * @param d dictionary containing symbol and stock_id pair
@@ -305,7 +305,7 @@ public class StockData {
     }
     
     /**
-     * This method insert data into STOCK_PRICES table up to a given date.
+     * Insert data into STOCK_PRICES table up to a given date.
      * Read CSV file upto a given date and insert data into STOCK_PRICES
      * @param date up to this date data will be inserted into STOCK_PRICES
      * @param d dictionary containing symbol and stock_id pair
@@ -356,7 +356,7 @@ public class StockData {
     }
    
     /**
-     * This method populates random entries into "stock_database.db"
+     * Populates random entries into "stock_database.db"
      * @param entries number of entries to enter into the database
      * @param database name of the database
      */
